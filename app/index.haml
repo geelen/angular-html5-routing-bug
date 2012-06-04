@@ -5,7 +5,8 @@
     %script(src='/application.js')
   %body
     %h1 {{ 1 + 2 }}
+    %h2 All ok?
     #stage(ng-view)
 
-  %script(type='text/ng-template' id='list.html')
-    %h2 {{ 'All ok? ' + ok }}
+    %script(type='text/ng-template' id='list.html')
+      %h3 {{ ok }}
