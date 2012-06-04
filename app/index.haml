@@ -1,7 +1,11 @@
 !!! 5
-%html
+%html(ng-app='my-app')
   %head
     %script(src='http://code.angularjs.org/angular-1.0.0rc10.min.js')
     %script(src='/application.js')
-  %body(ng-app)
+  %body
     %h1 {{ 1 + 2 }}
+    #stage(ng-view)
+
+  %script(type='text/ng-template' id='list.html')
+    %h2 {{ 'All ok? ' + ok }}
